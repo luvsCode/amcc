@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  background: #12113D;
+  min-height: 10vh;
+}
+
+.mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.mainNav ul li {
+  padding: 0.5rem 2rem;
+  display: inline-block;
+}
+
+.mainNav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainNav ul li a:hover {
+  color: #00c721;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  min-height: 90vh;
+  color: #12113D;
+  background: white;
+}
+
+.landing h1 {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing p {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing .mainBtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  background: #d40f0f;
+  color: white;
+  border-radius: 0.2rem;
+  border-style: none;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#12113D), to(#1d1c63));
+  background: linear-gradient(90deg, #12113D, #1d1c63);
+}
+
+.contact form {
+  min-height: 40vh;
+  width: 40vw;
+  background: white;
+  color: #777474;
+  border-radius: 2rem;
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.contact form .title {
+  color: #64b3f4;
+}
+
+.contact form .contactLeft, .contact form .contactRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact form .contactRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact form .input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: none;
+  outline: none;
+  color: #777474;
+  font-size: 0.7rem;
+}
+
+.contact form .inputContainer {
+  position: relative;
+}
+
+.contact form .placeHolder {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  padding: 0.3rem 0rem;
+  font-size: 0.6rem;
+  opacity: 0.6rem;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.contact form .line-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.contact form .promoContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact form .checkbox {
+  opacity: 1;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.contact form .checkboxLabel {
+  padding-left: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.contact form .checkboxContainer {
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.contact form .checkmark, .contact form .checkbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #664949;
+}
+
+.contact form .checkboxFill {
+  position: absolute;
+  background: #0f64d4;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+}
+
+.contact form .tick-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
+  z-index: 2;
+}
+
+.contact form .contactBtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  background: #d40f0f;
+  color: white;
+  border-radius: 0.2rem;
+  border-style: none;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (max-width: 812px) {
+  .contact form {
+    width: 90vw;
+    min-height: 80vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8rem 3rem;
+  }
+  .contact .line-svg {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
